@@ -695,11 +695,6 @@ h1,
 
 .carousel-image {
   width: 300px;
-  margin-right: 0.75rem;
-}
-
-.carousel-image:last-child{
-  margin-right: 0px;
 }
 
 .social-media-account{
