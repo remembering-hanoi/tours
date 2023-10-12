@@ -30,25 +30,28 @@
     />
     <meta property="og:title" content="Tourism | Remembering Hanoi" />
     <link rel="icon" href="media/favicon.ico" />
-    <link href="output.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="owl.carousel.min.css" rel="stylesheet" />
+    <link href="owl.theme.default.min.css" rel="stylesheet" />
     <title>Tourism | Remembering Hanoi</title>
   </head>
   <body>
     <header class="bg-[url('media/bg-yellow.webp')] bg-repeat bg-contain">
-      <nav class="custom-container flex items-center justify-between">
-        <img src="media/logo.webp" alt="Logo" class="w-36 inline-block" />
-        <div class="flex items-center space-x-3 justify-between">
-          <a href="mailto:rememberinghanoi@gmail.com" class="inline-block"
-            ><img src="media/mail.svg" alt="Mail" class="w-7 h-7"
-          /></a>
-          <a href="https://wa.me/84395076156" class="inline-block"
-            ><img src="media/whatsapp.svg" alt="WhatsApp" class="w-7 h-7"
-          /></a>
+      <nav class="custom-container sm:flex sm:items-center sm:justify-between">
+        <a href="/"
+          ><img src="media/logo.webp" alt="Logo" class="w-36 inline-block"
+        /></a>
+        <div
+          class="flex items-center space-x-4 border-t border-gray-900 pt-2 sm:pt-0 sm:border-t-0 sm:space-x-3 sm:justify-between"
+        >
+          <a href="#about-us" class="link">About Us</a>
+          <a href="#our-tour" class="link">Our Tour</a>
+          <a href="#contact-us" class="link">Contact Us</a>
           <a
-            href="https://calendly.com/rememberinghanoi/private-walking-food-cultural-tour"
-            class="hidden sm:booking-cta"
+            href="https://rememberinghanoi.substack.com/s/tourism"
+            class="link"
             target="_blank"
-            >Book Now →</a
+            >Blog</a
           >
         </div>
       </nav>
@@ -92,7 +95,7 @@
             alt="Tour"
           />
           <img
-            src="media/tours/8.webp"
+            src="media/tours/12.webp"
             class="intro-card-image film-frame"
             alt="Tour"
           />
@@ -107,7 +110,7 @@
             alt="Tour"
           />
           <img
-            src="media/tours/11.webp"
+            src="media/tours/18.webp"
             class="intro-card-image film-frame"
             alt="Tour"
           />
@@ -120,93 +123,148 @@
       </div>
     </header>
     <main>
-      <section class="intro">
+      <section id="about-us" class="intro">
         <div class="intro-layout">
           <div class="intro-card">
-            <h1 class="intro-card-title">Private Personalized Tours</h1>
+            <h1 class="intro-card-title">Hello! Xin chào!</h1>
             <p class="intro-card-description">
-              Welcome to Remembering Hanoi, where your happiness is our utmost
-              concern! We recognize the importance of tailoring your journey to
-              your preferences. Let's go ahead and reserve a tour to ensure your
-              experience is truly extraordinary.
+              Welcome to Remembering Hanoi, where your joy is our top priority!
+              Our journey began with a deep-rooted love for this city. Our
+              guides, born and raised in Hanoi, have been immersed in its
+              culture from day one. Now, they're eager to share their love and
+              the unique stories of their lifelong journey in the city, from
+              childhood to the present. They've witnessed the city's
+              transformations over the years, and they're ready to guide you
+              through it all. Reserve a tour with us today to ensure your
+              experience is genuinely exceptional.
             </p>
             <a
-              href="https://calendly.com/rememberinghanoi/private-walking-food-cultural-tour"
-              class="intro-card-cta booking-cta"
+              href="https://www.trustpilot.com/review/tours.rememberinghanoi.com?utm_medium=trustbox&utm_source=MicroReviewCount#"
+              class="intro-card-cta"
               target="_blank"
-            >
-              Book Now →</a
+              >See our reviews on Trustpilot →</a
             >
           </div>
         </div>
       </section>
-      <section class="intro bg-gray-50">
+      <section id="our-tour" class="bg-gray-900 text-gray-100 intro">
         <div class="intro-layout">
           <div class="lg:col-start-2 intro-card">
-            <h1 class="intro-card-title">How We Personalize Your Journey</h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mt-14">
+            <h1 class="intro-card-title overflow-visible">
+              Personalized and Private Walking Tour
+            </h1>
+            <div class="mt-5 flex flex-col space-y-0.5 font-bold text-lg">
+              <div class="flex items-center space-x-2">
+                <img src="media/clock.svg" class="w-5 h-5" alt="Duration" />
+                <span>4 hours</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <img src="media/location.svg" class="w-5 h-5" alt="Location" />
+                <span>Hanoi's Old Quarter, Vietnam</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <img src="media/price.svg" class="w-5 h-5" alt="Price" />
+                <span>Based on your preferences</span>
+              </div>
+            </div>
+            <p class="intro-card-description">
+              Our one and only tour, thoughtfully tailored to your preferences.
+              When you join us, a local Hanoian guide will lead you to explore
+              the Old Quarter's finest food gems. You'll indulge in the
+              delightful flavors that have given Hanoi its global reputation
+              among food lovers. Furthermore, this tour provides a gateway to
+              the city's rich culture and history, expanding your understanding
+              of the daily lives of its residents.
+            </p>
+            <a
+              href="https://calendly.com/rememberinghanoi/private-personalized-walking-tour"
+              class="intro-card-cta"
+              target="_blank"
+            >
+              Read more →</a
+            >
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme mt-10">
+          <img
+            src="media/tours/16.webp"
+            class="carousel-image film-frame"
+            alt="Tour"
+          />
+          <img
+            src="media/tours/11.webp"
+            class="carousel-image film-frame"
+            alt="Tour"
+          />
+          <img
+            src="media/tours/8.webp"
+            class="carousel-image film-frame"
+            alt="Tour"
+          />
+          <img
+            src="media/tours/17.webp"
+            class="carousel-image film-frame"
+            alt="Tour"
+          />
+          <img
+            src="media/tours/1.webp"
+            class="carousel-image film-frame"
+            alt="Tour"
+          />
+          <img
+            src="media/tours/14.webp"
+            class="carousel-image film-frame"
+            alt="Tour"
+          />
+          <img
+            src="media/tours/15.webp"
+            class="carousel-image film-frame"
+            alt="Tour"
+          />
+        </div>
+      </section>
+      <section id="contact-us" class="bg-gray-50 intro">
+        <div class="intro-layout">
+          <div class="intro-card">
+            <h1 class="intro-card-title">Contact Us</h1>
+            <p class="intro-card-description">
+              If you have any questions or need assistance, please don't
+              hesitate to get in touch. We offer multiple ways to connect with
+              us for your convenience.
+            </p>
+            <div class="flex items-center space-x-2 mt-7">
               <div>
-                <img
-                  src="media/processes/1.webp"
-                  class="step-icon"
-                  alt="Step 1"
-                />
-                <div class="step-title-layout">
-                  <span class="step-num">Step 1</span>
-                  <h2 class="step-title">Reservation</h2>
-                </div>
-                <p class="step-description">
-                  Begin by choosing your desired date. You'll then receive a
-                  confirmation email to acknowledge your booking.
-                </p>
+                <a
+                  href="https://wa.me/84395076156"
+                  class="social-media-account"
+                  target="_blank"
+                  ><img
+                    src="media/whatsapp.svg"
+                    class="social-media-icon"
+                    alt="WhatsApp"
+                /></a>
               </div>
               <div>
-                <img
-                  src="media/processes/2.webp"
-                  class="step-icon"
-                  alt="Step 2"
-                />
-                <div class="step-title-layout">
-                  <span class="step-num">Step 2</span>
-                  <h2 class="step-title">Crafting</h2>
-                </div>
-                <p class="step-description">
-                  Within just 1 hour, we'll get in touch with you via email to
-                  provide you with a personalized itinerary crafted especially
-                  for you at a reasonable price.
-                </p>
+                <a
+                  href="mailto:rememberinghanoi@gmail.com"
+                  class="social-media-account"
+                  target="_blank"
+                  ><img
+                    src="media/mail.svg"
+                    class="social-media-icon"
+                    alt="Email"
+                /></a>
               </div>
               <div>
-                <img
-                  src="media/processes/3.webp"
-                  class="step-icon"
-                  alt="Step 3"
-                />
-                <div class="step-title-layout">
-                  <span class="step-num">Step 3</span>
-                  <h2 class="step-title">Payment</h2>
-                </div>
-                <p class="step-description">
-                  After you've confirmed your customized itinerary within 2
-                  days, we'll swiftly send you a PayPal invoice for your
-                  convenience.
-                </p>
-              </div>
-              <div>
-                <img
-                  src="media/processes/4.webp"
-                  class="step-icon"
-                  alt="Step 4"
-                />
-                <div class="step-title-layout">
-                  <span class="step-num">Step 4</span>
-                  <h2 class="step-title">Let's go</h2>
-                </div>
-                <p class="step-description">
-                  Once your payment is settled, we'll be eagerly awaiting to
-                  pick you up at your specified location on the date you've
-                  chosen.
-                </p>
+                <a
+                  href="https://www.instagram.com/rememberinghanoi/"
+                  class="social-media-account"
+                  target="_blank"
+                  ><img
+                    src="media/instagram.svg"
+                    class="social-media-icon"
+                    alt="Instagram"
+                /></a>
               </div>
             </div>
           </div>
@@ -219,5 +277,11 @@
       </p>
     </footer>
     <script defer src="main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="owl.carousel.min.js"></script>
   </body>
 </html>
