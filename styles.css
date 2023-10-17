@@ -442,6 +442,10 @@ video {
   display: none;
 }
 
+:root {
+  --red: #fa3801;
+}
+
 html {
   font-family: Roboto, sans-serif;
   scroll-behavior: smooth;
@@ -473,10 +477,7 @@ h1,
 }
 
 .active{
-  background-image: url('media/bg-red.webp');
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  color: url('media/bg-red.webp');
 }
 
 .link{
@@ -484,10 +485,7 @@ h1,
 }
 
 .link:hover{
-  background-image: url('media/bg-red.webp');
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  color: var(--red);
 }
 
 .film-frame {
@@ -633,10 +631,7 @@ h1,
 .intro-card-cta{
   margin-top: 1.75rem;
   display: inline-block;
-  background-image: url('media/bg-red.webp');
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
+  color: var(--red);
 }
 
 .intro-card-image-collage{
@@ -698,17 +693,19 @@ h1,
 }
 
 .social-media-account{
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border-radius: 9999px;
+  border-width: 4px;
+  border-color: var(--red);
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
   padding: 0.5rem;
 }
 
 .social-media-account:hover{
-  background-image: url('media/bg-red.webp');
-  background-size: contain;
-  background-repeat: repeat;
+  background-color: var(--red);
 }
 
 .social-media-icon{
@@ -969,6 +966,10 @@ h1,
 
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mt-2\.5{
+  margin-top: 0.625rem;
 }
 
 .mt-5{
@@ -2059,11 +2060,6 @@ h1,
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
-.bg-gray-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'media\/bg-yellow\.webp\'\)\]{
   background-image: url('media/bg-yellow.webp');
 }
@@ -2246,6 +2242,11 @@ h1,
   vertical-align: super;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -2330,11 +2331,6 @@ h1,
 .text-blue-500{
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
-}
-
-.text-gray-100{
-  --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
 .underline{

@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-XZHDREH7ZS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-XZHDREH7ZS");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -44,9 +58,8 @@
         <div
           class="flex items-center space-x-4 border-t border-gray-900 pt-2 sm:pt-0 sm:border-t-0 sm:space-x-3 sm:justify-between"
         >
-          <a href="#about-us" class="link">About Us</a>
           <a href="#our-tour" class="link">Our Tour</a>
-          <a href="#contact-us" class="link">Contact Us</a>
+          <a href="#about-us" class="link">About Us</a>
           <a
             href="https://rememberinghanoi.substack.com/s/tourism"
             class="link"
@@ -123,31 +136,7 @@
       </div>
     </header>
     <main>
-      <section id="about-us" class="intro">
-        <div class="intro-layout">
-          <div class="intro-card">
-            <h1 class="intro-card-title">Hello! Xin chào!</h1>
-            <p class="intro-card-description">
-              Welcome to Remembering Hanoi, where your joy is our top priority!
-              Our journey began with a deep-rooted love for this city. Our
-              guides, born and raised in Hanoi, have been immersed in its
-              culture from day one. Now, they're eager to share their love and
-              the unique stories of their lifelong journey in the city, from
-              childhood to the present. They've witnessed the city's
-              transformations over the years, and they're ready to guide you
-              through it all. Reserve a tour with us today to ensure your
-              experience is genuinely exceptional.
-            </p>
-            <a
-              href="https://www.trustpilot.com/review/tours.rememberinghanoi.com?utm_medium=trustbox&utm_source=MicroReviewCount#"
-              class="intro-card-cta"
-              target="_blank"
-              >See our reviews on Trustpilot →</a
-            >
-          </div>
-        </div>
-      </section>
-      <section id="our-tour" class="bg-gray-900 text-gray-100 intro">
+      <section id="our-tour" class="intro">
         <div class="intro-layout">
           <div class="lg:col-start-2 intro-card">
             <h1 class="intro-card-title overflow-visible">
@@ -176,13 +165,44 @@
               the city's rich culture and history, expanding your understanding
               of the daily lives of its residents.
             </p>
-            <a
-              href="https://calendly.com/rememberinghanoi/private-personalized-walking-tour"
-              class="intro-card-cta"
-              target="_blank"
-            >
-              Read more →</a
-            >
+            <div class="mt-7 font-bold text-2xl">
+              <p>BOOK YOUR TOUR BY CONTACTING US</p>
+              <div class="flex items-center space-x-2 mt-2.5">
+                <div>
+                  <a
+                    href="https://wa.me/84395076156"
+                    class="social-media-account"
+                    target="_blank"
+                    ><img
+                      src="media/whatsapp.svg"
+                      class="social-media-icon"
+                      alt="WhatsApp"
+                  /></a>
+                </div>
+                <div>
+                  <a
+                    href="mailto:rememberinghanoi@gmail.com"
+                    class="social-media-account"
+                    target="_blank"
+                    ><img
+                      src="media/mail.svg"
+                      class="social-media-icon"
+                      alt="Email"
+                  /></a>
+                </div>
+                <div>
+                  <a
+                    href="https://www.instagram.com/rememberinghanoi/"
+                    class="social-media-account"
+                    target="_blank"
+                    ><img
+                      src="media/instagram.svg"
+                      class="social-media-icon"
+                      alt="Instagram"
+                  /></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="owl-carousel owl-theme mt-10">
@@ -207,6 +227,11 @@
           <video controls class="film-frame">
             <source src="media/tours/23.mp4" type="video/mp4" />
           </video>
+          <img
+            src="media/tours/24.webp"
+            class="carousel-image film-frame"
+            alt="Tour"
+          />
           <img
             src="media/tours/17.webp"
             class="carousel-image film-frame"
@@ -242,50 +267,26 @@
           />
         </div>
       </section>
-      <section id="contact-us" class="bg-gray-50 intro">
+      <section id="about-us" class="bg-gray-50 intro">
         <div class="intro-layout">
           <div class="intro-card">
-            <h1 class="intro-card-title">Contact Us</h1>
+            <h1 class="intro-card-title">What makes us special</h1>
             <p class="intro-card-description">
-              If you have any questions or need assistance, please don't
-              hesitate to get in touch. We offer multiple ways to connect with
-              us for your convenience.
+              Our journey began with a deep-rooted love for this city. Our
+              guides, born and raised in Hanoi, have been immersed in its
+              culture from day one. Now, they're eager to share their love and
+              the unique stories of their lifelong journey in the city, from
+              childhood to the present. They've witnessed the city's
+              transformations over the years, and they're ready to guide you
+              through it all. Reserve a tour with us today to ensure your
+              experience is genuinely exceptional.
             </p>
-            <div class="flex items-center space-x-2 mt-7">
-              <div>
-                <a
-                  href="https://wa.me/84395076156"
-                  class="social-media-account"
-                  target="_blank"
-                  ><img
-                    src="media/whatsapp.svg"
-                    class="social-media-icon"
-                    alt="WhatsApp"
-                /></a>
-              </div>
-              <div>
-                <a
-                  href="mailto:rememberinghanoi@gmail.com"
-                  class="social-media-account"
-                  target="_blank"
-                  ><img
-                    src="media/mail.svg"
-                    class="social-media-icon"
-                    alt="Email"
-                /></a>
-              </div>
-              <div>
-                <a
-                  href="https://www.instagram.com/rememberinghanoi/"
-                  class="social-media-account"
-                  target="_blank"
-                  ><img
-                    src="media/instagram.svg"
-                    class="social-media-icon"
-                    alt="Instagram"
-                /></a>
-              </div>
-            </div>
+            <a
+              href="https://www.trustpilot.com/review/tours.rememberinghanoi.com?utm_medium=trustbox&utm_source=MicroReviewCount#"
+              class="intro-card-cta"
+              target="_blank"
+              >See our reviews on Trustpilot →</a
+            >
           </div>
         </div>
       </section>
