@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         introLayoutElmStyle.getPropertyValue("padding-left").replace("px", "")
       ),
     loop: false,
+    margin: 12,
     nav: true,
     responsive: {
       0: {
