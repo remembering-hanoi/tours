@@ -282,55 +282,25 @@
       <section id="blog" class="intro">
         <div class="intro-layout">
           <div class="intro-card">
-            <h1 class="intro-card-title">Delve Deeper into Our Story</h1>
+            <h1 class="intro-card-title">More About Hanoi</h1>
           </div>
           <div
             class="row-start-2 col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-10"
           >
-            <a
-              href="https://rememberinghanoi.substack.com/p/what-makes-us-special"
-              target="_blank"
-              class="block border-b border-gray-200 pb-5 group"
-            >
-              <img
-                src="media/blog/what-makes-us-special.webp"
-                class="border-4"
-                style="border-image: url('media/film-frame.webp') 10 round"
-              />
-              <h2
-                class="text-3xl mt-3 group-hover:text-[color:var(--red)]"
-                style="font-family: Roboto"
-              >
-                What Makes Us Special
-              </h2>
-              <p class="mt-3">
-                Our journey began with a deep-rooted love for this city. Our
-                guides, born and raised in Hanoi, have been immersed in its
-                culture from day one...
-              </p>
-            </a>
-            <a
-              href="https://rememberinghanoi.substack.com/p/can-we-build-trust-in-5-minutes"
-              target="_blank"
-              class="block border-b border-gray-200 pb-5 group"
-            >
-              <img
-                src="media/blog/can-we-build-trust-in-5-minutes.webp"
-                class="border-4"
-                style="border-image: url('media/film-frame.webp') 10 round"
-              />
-              <h2
-                class="text-3xl mt-3 group-hover:text-[color:var(--red)]"
-                style="font-family: Roboto"
-              >
-                Can We Build Trust in 5 Minutes?
-              </h2>
-              <p class="mt-3">
-                In this contemporary world, trust is hard to find. However, we
-                believe that despite its difficulty, it can be easily built
-                upon.....
-              </p>
-            </a>
+            <div class="col-span-2">
+              <div id="substack-feed-embed"></div>
+              <script>
+                window.SubstackFeedWidget = {
+                  substackUrl: "rememberinghanoi.substack.com",
+                  posts: 2,
+                  layout: "center",
+                };
+              </script>
+              <script
+                src="https://substackapi.com/embeds/feed.js"
+                async
+              ></script>
+            </div>
             <a
               href="https://rememberinghanoi.substack.com/s/tourism"
               target="_blank"
@@ -338,9 +308,8 @@
             >
               <h2
                 class="text-4xl lg:text-5xl text-[color:var(--red)] leading-tight"
-                style="font-family: Roboto"
               >
-                Read More About Our Stories
+                Read More
               </h2>
               <div class="text-right">
                 <i
