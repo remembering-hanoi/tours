@@ -697,20 +697,25 @@ h1,
   flex-direction: column;
   justify-content: center;
   border-radius: 9999px;
-  border-width: 4px;
+  border-width: 2px;
   border-color: var(--red);
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  background-image: url('media/bg-yellow.webp');
+  background-size: contain;
+  background-repeat: repeat;
   padding: 0.5rem;
-}
-
-.social-media-account:hover{
-  background-color: var(--red);
 }
 
 .social-media-icon{
   height: 1.5rem;
   width: 1.5rem;
+}
+
+.group:hover .social-media-icon{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 *, ::before, ::after{
