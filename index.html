@@ -58,14 +58,9 @@
         <div
           class="flex items-center space-x-4 border-t border-gray-900 pt-2 sm:pt-0 sm:border-t-0 sm:space-x-3 sm:justify-between"
         >
-          <a href="#our-tour" class="link">Tour</a>
           <a href="#about-us" class="link">About</a>
-          <a
-            href="https://rememberinghanoi.substack.com/s/tourism"
-            class="link"
-            target="_blank"
-            >Blog</a
-          >
+          <a href="#our-tour" class="link">Tour</a>
+          <a href="#blog" class="link">Blog</a>
         </div>
       </nav>
       <div class="pb-10">
@@ -136,7 +131,30 @@
       </div>
     </header>
     <main>
-      <section id="our-tour" class="intro">
+      <section id="about-us" class="intro">
+        <div class="intro-layout">
+          <div class="intro-card">
+            <h1 class="intro-card-title">Hello! Xin Chào!</h1>
+            <p class="intro-card-description">
+              Welcome to Remembering Hanoi! Our journey began with a deep-rooted
+              love for this city. Our guides, born and raised in Hanoi, have
+              been immersed in its culture from day one. Now, they're eager to
+              share their love and the unique stories of their lifelong journey
+              in the city, from childhood to the present. They've witnessed the
+              city's transformations over the years, and they're ready to guide
+              you through it all. Reserve a tour with us today to ensure your
+              experience is genuinely exceptional.
+            </p>
+            <a
+              href="https://www.trustpilot.com/review/tours.rememberinghanoi.com?utm_medium=trustbox&utm_source=MicroReviewCount#"
+              class="intro-card-cta"
+              target="_blank"
+              >See our reviews on Trustpilot →</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="our-tour" class="bg-gray-100 intro">
         <div class="intro-layout">
           <div class="lg:col-start-2 intro-card">
             <h1 class="intro-card-title overflow-visible">
@@ -261,26 +279,75 @@
           />
         </div>
       </section>
-      <section id="about-us" class="bg-gray-50 intro">
+      <section id="blog" class="intro">
         <div class="intro-layout">
           <div class="intro-card">
-            <h1 class="intro-card-title">What makes us special</h1>
-            <p class="intro-card-description">
-              Our journey began with a deep-rooted love for this city. Our
-              guides, born and raised in Hanoi, have been immersed in its
-              culture from day one. Now, they're eager to share their love and
-              the unique stories of their lifelong journey in the city, from
-              childhood to the present. They've witnessed the city's
-              transformations over the years, and they're ready to guide you
-              through it all. Reserve a tour with us today to ensure your
-              experience is genuinely exceptional.
-            </p>
+            <h1 class="intro-card-title">Delve Deeper into Our Story</h1>
+          </div>
+          <div
+            class="row-start-2 col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-10"
+          >
             <a
-              href="https://www.trustpilot.com/review/tours.rememberinghanoi.com?utm_medium=trustbox&utm_source=MicroReviewCount#"
-              class="intro-card-cta"
+              href="https://rememberinghanoi.substack.com/p/what-makes-us-special"
               target="_blank"
-              >See our reviews on Trustpilot →</a
+              class="block border-b border-gray-200 pb-5 group"
             >
+              <img
+                src="media/blog/what-makes-us-special.webp"
+                class="border-4"
+                style="border-image: url('media/film-frame.webp') 10 round"
+              />
+              <h2
+                class="text-3xl mt-3 group-hover:text-[color:var(--red)]"
+                style="font-family: Roboto"
+              >
+                What Makes Us Special
+              </h2>
+              <p class="mt-3">
+                Our journey began with a deep-rooted love for this city. Our
+                guides, born and raised in Hanoi, have been immersed in its
+                culture from day one...
+              </p>
+            </a>
+            <a
+              href="https://rememberinghanoi.substack.com/p/can-we-build-trust-in-5-minutes"
+              target="_blank"
+              class="block border-b border-gray-200 pb-5 group"
+            >
+              <img
+                src="media/blog/can-we-build-trust-in-5-minutes.webp"
+                class="border-4"
+                style="border-image: url('media/film-frame.webp') 10 round"
+              />
+              <h2
+                class="text-3xl mt-3 group-hover:text-[color:var(--red)]"
+                style="font-family: Roboto"
+              >
+                Can We Build Trust in 5 Minutes?
+              </h2>
+              <p class="mt-3">
+                In this contemporary world, trust is hard to find. However, we
+                believe that despite its difficulty, it can be easily built
+                upon.....
+              </p>
+            </a>
+            <a
+              href="https://rememberinghanoi.substack.com/s/tourism"
+              target="_blank"
+              class="h-auto bg-[url('media/bg-yellow.webp')] bg-repeat bg-contain flex flex-col justify-between space-y-14 lg:space-y-0 p-4 w-full group"
+            >
+              <h2
+                class="text-4xl lg:text-5xl text-[color:var(--red)] leading-tight"
+                style="font-family: Roboto"
+              >
+                Read More About Our Stories
+              </h2>
+              <div class="text-right">
+                <i
+                  class="fa-solid fa-circle-arrow-right text-5xl text-[color:var(--red)] group-hover:transform group-hover:ease-in-out group-hover:duration-200 group-hover:-translate-x-4"
+                ></i>
+              </div>
+            </a>
           </div>
         </div>
       </section>
