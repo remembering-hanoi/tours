@@ -694,28 +694,22 @@ h1,
 
 .social-media-account{
   display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
   flex-direction: column;
   justify-content: center;
   border-radius: 9999px;
-  border-width: 2px;
-  border-color: var(--red);
   background-image: url('media/bg-yellow.webp');
   background-size: contain;
   background-repeat: repeat;
-  padding: 0.5rem;
 }
 
 .social-media-icon{
-  height: 1.5rem;
-  width: 1.5rem;
+  text-align: center;
 }
 
 .group:hover .social-media-icon{
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--red);
 }
 
 *, ::before, ::after{
@@ -1096,6 +1090,14 @@ h1,
   width: 1.25rem;
 }
 
+.w-2{
+  width: 0.5rem;
+}
+
+.w-4{
+  width: 1rem;
+}
+
 .flex-shrink{
   flex-shrink: 1;
 }
@@ -1424,6 +1426,10 @@ h1,
   grid-auto-flow: column dense;
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -1606,6 +1612,10 @@ h1,
 
 .justify-items-stretch{
   justify-items: stretch;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
