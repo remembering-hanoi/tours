@@ -50,7 +50,7 @@
     <title>Tourism | Remembering Hanoi</title>
   </head>
   <body>
-    <header class="bg-[url('media/bg-yellow.webp')] bg-repeat bg-contain">
+    <header class="bg-yellow-wall">
       <nav class="custom-container sm:flex sm:items-center sm:justify-between">
         <a href="/"
           ><img src="media/logo.webp" alt="Logo" class="w-36 inline-block"
@@ -58,8 +58,9 @@
         <div
           class="flex items-center space-x-4 border-t border-gray-900 pt-2 sm:pt-0 sm:border-t-0 sm:space-x-3 sm:justify-between"
         >
-          <a href="#about-us" class="link">About</a>
-          <a href="#our-tour" class="link">Tour</a>
+          <a href="#about-us" class="link">About Us</a>
+          <a href="#our-tour" class="link">Our Tour</a>
+          <a href="#contact-us" class="link">Contact Us</a>
           <a href="#blog" class="link">Blog</a>
         </div>
       </nav>
@@ -147,14 +148,18 @@
             </p>
             <a
               href="https://www.trustpilot.com/review/tours.rememberinghanoi.com?utm_medium=trustbox&utm_source=MicroReviewCount#"
-              class="intro-card-cta"
+              class="intro-card-cta group"
               target="_blank"
-              >See our reviews on Trustpilot →</a
+              >See our reviews
+              <span
+                class="inline-block group-hover:transform group-hover:ease-in-out group-hover:duration-200 group-hover:translate-x-1"
+                >→</span
+              ></a
             >
           </div>
         </div>
       </section>
-      <section id="our-tour" class="bg-gray-100 intro">
+      <section id="our-tour" class="bg-gray-900 text-gray-100 intro">
         <div class="intro-layout">
           <div class="lg:col-start-2 intro-card">
             <h1 class="intro-card-title overflow-visible">
@@ -183,49 +188,27 @@
               the city's rich culture and history, expanding your understanding
               of the daily lives of its residents.
             </p>
-            <div class="mt-7 font-bold text-2xl">
-              <p>BOOK YOUR TOUR BY CONTACTING US VIA</p>
-              <div class="flex items-center space-x-2 mt-2.5">
-                <div>
-                  <a
-                    href="https://wa.me/84395076156"
-                    class="social-media-account group"
-                    target="_blank"
-                  >
-                    <i class="fa-brands fa-whatsapp social-media-icon"></i>
-                  </a>
-                </div>
-                <div>
-                  <a
-                    href="mailto:rememberinghanoi@gmail.com"
-                    class="social-media-account group"
-                    target="_blank"
-                  >
-                    <i class="fa-regular fa-envelope social-media-icon"></i>
-                  </a>
-                </div>
-                <div>
-                  <a
-                    href="https://www.instagram.com/rememberinghanoi/"
-                    class="social-media-account group"
-                    target="_blank"
-                  >
-                    <i class="fa-brands fa-instagram social-media-icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+            <a
+              href="https://calendly.com/rememberinghanoi/private-personalized-walking-tour"
+              class="inline-block py-2 px-3 rounded-md bg-[color:var(--red)] mt-7 text-white group"
+              target="_blank"
+              >Book now
+              <span
+                class="inline-block group-hover:transform group-hover:ease-in-out group-hover:duration-200 group-hover:translate-x-1"
+                >→</span
+              ></a
+            >
           </div>
         </div>
         <div class="owl-carousel owl-theme mt-10">
-          <video controls class="film-frame">
-            <source src="media/tours/21.mp4" type="video/mp4" />
-          </video>
           <img
             src="media/tours/16.webp"
             class="carousel-image film-frame"
             alt="Tour"
           />
+          <video controls class="film-frame">
+            <source src="media/tours/21.mp4" type="video/mp4" />
+          </video>
           <img
             src="media/tours/11.webp"
             class="carousel-image film-frame"
@@ -279,13 +262,13 @@
           />
         </div>
       </section>
-      <section id="blog" class="intro">
+      <section id="blog" class="intro bg-yellow-wall">
         <div class="intro-layout">
           <div class="intro-card">
             <h1 class="intro-card-title">Discovering Hanoi</h1>
           </div>
           <div
-            class="row-start-2 col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-10"
+            class="row-start-2 col-span-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10"
           >
             <div class="col-span-2">
               <div id="substack-feed-embed"></div>
@@ -294,6 +277,11 @@
                   substackUrl: "rememberinghanoi.substack.com",
                   posts: 2,
                   layout: "center",
+                  colors: {
+                    primary: "#111827",
+                    secondary: "#4B5563",
+                    background: "#FFFFFF00",
+                  },
                 };
               </script>
               <script
@@ -304,27 +292,57 @@
             <a
               href="https://rememberinghanoi.substack.com/s/tourism"
               target="_blank"
-              class="h-auto bg-[url('media/bg-yellow.webp')] bg-repeat bg-contain flex flex-col justify-between space-y-14 lg:space-y-0 p-4 w-full group"
+              class="h-auto mt-2 lg:ml-2 bg-gray-900 text-gray-50 flex flex-col justify-between space-y-24 lg:space-y-0 p-4 hover:bg-[color:var(--red)]"
             >
-              <h2
-                class="text-4xl lg:text-5xl text-[color:var(--red)] leading-tight"
-              >
-                Learn More
-              </h2>
+              <p class="text-xl">
+                Delve into an array of captivating stories about Hanoi, allowing
+                you to gain deeper insights into the city's rich history and
+                vibrant culture.
+              </p>
               <div class="text-right">
-                <i
-                  class="fa-solid fa-circle-arrow-right text-5xl text-[color:var(--red)] group-hover:transform group-hover:ease-in-out group-hover:duration-200 group-hover:-translate-x-4"
-                ></i>
+                <i class="fa-solid fa-circle-arrow-right text-5xl"></i>
               </div>
             </a>
           </div>
         </div>
       </section>
     </main>
-    <footer class="copyright-layout">
-      <p class="custom-container">
-        &copy; Remembering Hanoi. All rights reserved.
-      </p>
+    <footer class="bg-yellow-wall">
+      <div class="custom-container py-0">
+        <hr class="border-t border-t-gray-700" />
+      </div>
+      <div
+        class="custom-container flex flex-col-reverse md:flex-row md:items-center justify-between"
+      >
+        <p class="border-t border-t-gray-700 pt-2 md:pt-0 md:border-t-0">
+          &copy; Remembering Hanoi. All rights reserved.
+        </p>
+        <div
+          id="contact-us"
+          class="flex items-center space-x-4 pb-3 md:pt-0 md:pb-0"
+        >
+          <p class="text-xl font-bold md:font-normal md:text-base">
+            Contact Us
+          </p>
+          <div class="flex items-center space-x-2">
+            <a href="https://wa.me/84395076156" class="social-media-account">
+              <i class="fa-brands fa-whatsapp social-media-icon"></i>
+            </a>
+            <a
+              href="mailto:rememberinghanoi@gmail.com"
+              class="social-media-account"
+            >
+              <i class="fa-regular fa-envelope social-media-icon"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/rememberinghanoi/"
+              class="social-media-account"
+            >
+              <i class="fa-brands fa-instagram social-media-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
     <script defer src="main.js"></script>
     <script
