@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     items: 2,
     loop: true,
     margin: 12,
+    nav: true,
     responsive: {
       0: {
         items: 1,
