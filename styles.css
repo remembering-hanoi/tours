@@ -607,8 +607,7 @@ h1,
     gap: 1.25rem;
   }
 
-  .intro-card,
-    .intro-blog-card{
+  .intro-card{
     grid-column: span 3 / span 3;
   }
 }
