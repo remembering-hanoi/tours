@@ -771,6 +771,19 @@ h1,
   font-weight: 700;
 }
 
+.btn-cta{
+  margin-top: 1.75rem;
+  display: inline-block;
+  border-radius: 0.375rem;
+  background-color: var(--red);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1044,10 +1057,6 @@ h1,
 
 .mt-5{
   margin-top: 1.25rem;
-}
-
-.mt-7{
-  margin-top: 1.75rem;
 }
 
 .box-border{
@@ -2001,10 +2010,6 @@ h1,
   border-radius: 0.25rem;
 }
 
-.rounded-md{
-  border-radius: 0.375rem;
-}
-
 .rounded-sm{
   border-radius: 0.125rem;
 }
@@ -2271,32 +2276,13 @@ h1,
   padding: 1rem;
 }
 
-.px-3{
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .py-0{
   padding-top: 0px;
   padding-bottom: 0px;
 }
 
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
 .pb-3{
   padding-bottom: 0.75rem;
-}
-
-.pt-10{
-  padding-top: 2.5rem;
 }
 
 .pt-2{
@@ -2467,11 +2453,6 @@ h1,
 .text-gray-50{
   --tw-text-opacity: 1;
   color: rgb(249 250 251 / var(--tw-text-opacity));
-}
-
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline{
