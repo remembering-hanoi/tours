@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
     items: 2,
     loop: true,
     margin: 12,
-    nav: true,
+    autoplay: true,
+    autoplayTimeout: 1500,
+    autoplayHoverPause: false,
     responsive: {
       0: {
         items: 1,
