@@ -460,6 +460,7 @@ h1,
     .post>address,
     .post>footer {
   font-family: "Xanh Mono", serif;
+  font-style: italic;
 }
 
 h1,
@@ -1039,6 +1040,10 @@ h1,
   margin: 0.25rem;
 }
 
+.mr-1{
+  margin-right: 0.25rem;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -1053,10 +1058,6 @@ h1,
 
 .mt-5{
   margin-top: 1.25rem;
-}
-
-.mr-1{
-  margin-right: 0.25rem;
 }
 
 .box-border{
