@@ -454,22 +454,9 @@ h1,
     h3,
     h4,
     h5,
-    h6,
-    select,
-    .intro-card-tag-layout,
-    .post>address,
-    .post>footer {
+    h6 {
   font-family: "Xanh Mono", serif;
   font-style: italic;
-}
-
-h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6{
-  font-weight: 800;
 }
 
 .active{
@@ -611,7 +598,7 @@ h1,
 
 .intro-card-title{
   font-size: 3rem;
-  line-height: 1;
+  line-height: 1.25;
 }
 
 @media (min-width: 1024px){
@@ -752,6 +739,7 @@ h1,
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
+  font-style: normal;
   line-height: 1.375;
 }
 
