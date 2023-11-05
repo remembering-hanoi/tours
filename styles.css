@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap');
+@font-face {
+  font-family: "Classique Saigon";
+
+  src: url('media/fonts/ClassiqueSaigon Full.otf');
+}
 
 /*
 ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
@@ -443,7 +447,7 @@ video {
 }
 
 html {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
   scroll-behavior: smooth;
   --tw-text-opacity: 1;
   color: rgb(31 41 55 / var(--tw-text-opacity));
@@ -454,9 +458,21 @@ h1,
     h3,
     h4,
     h5,
-    h6 {
-  font-family: "Xanh Mono", serif;
-  font-style: italic;
+    h6,
+    .logo {
+  font-family: "Classique Saigon", serif;
+}
+
+.logo{
+  font-size: 4.5rem;
+  line-height: 1;
+  color: var(--red);
+}
+
+.tm{
+  font-size: 8px;
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .active{
@@ -598,13 +614,23 @@ h1,
 
 .intro-card-title{
   font-size: 3rem;
-  line-height: 1.25;
+  line-height: 1;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 640px){
+  .intro-card-title{
+    font-size: 3.75rem;
+    line-height: 1;
+    line-height: 3rem;
+  }
 }
 
 @media (min-width: 1024px){
   .intro-card-title{
-    font-size: 4.5rem;
+    font-size: 6rem;
     line-height: 1;
+    line-height: 4rem;
   }
 }
 
@@ -734,7 +760,7 @@ h1,
 }
 
 .review-title {
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
   margin-top: 0.75rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1149,10 +1175,6 @@ h1,
 
 .h-auto{
   height: auto;
-}
-
-.w-36{
-  width: 9rem;
 }
 
 .w-5{
